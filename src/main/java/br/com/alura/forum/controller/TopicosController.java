@@ -12,21 +12,19 @@ import br.com.alura.forum.repository.TopicoRepository;
 
 @RestController
 public class TopicosController {
-	
+
 	@Autowired
 	private TopicoRepository topicoRepository;
 
 	@RequestMapping("/topicos")
-	public List<TopicoDto> lista(String nomeCurso){
+	public List<TopicoDto> lista(String nomeCurso) {
 		List<Topico> topicos;
 		if (nomeCurso == null) {
 			topicos = topicoRepository.findAll();
-		}else {
+		} else {
 			topicos = topicoRepository.findByCurso_Nome(nomeCurso);
 		}
 		return TopicoDto.converter(topicos);
 	}
-	
 
-	
 }
