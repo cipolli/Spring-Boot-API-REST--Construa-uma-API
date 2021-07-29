@@ -6,9 +6,10 @@ INSERT INTO CURSO(nome, categoria) VALUES('CSS', 'Front-end');
 INSERT INTO CURSO(nome, categoria) VALUES('Angular', 'Front-end');
 INSERT INTO CURSO(nome, categoria) VALUES('Node', 'Back-end');
 
-INSERT INTO USUARIO(nome, email, senha) VALUES('Zuleide', 'zuleide@email.com', '123456');
-INSERT INTO USUARIO(nome, email, senha) VALUES('Afranio', 'afranio@email.com', '123456');
-INSERT INTO USUARIO(nome, email, senha) VALUES('Estopa', 'estopa@email.com', '123456');
+INSERT INTO USUARIO(nome, email, senha) VALUES('Aluno', 'aluno@email.com', '$2a$10$1QrlU4FnY9CGAzmGvEGCgOK9lHFlmqfGDz8WlKqZVCMMcyai1dAhu');
+INSERT INTO USUARIO(nome, email, senha) VALUES('Zuleide', 'zuleide@email.com', '$2a$10$1QrlU4FnY9CGAzmGvEGCgOK9lHFlmqfGDz8WlKqZVCMMcyai1dAhu');
+INSERT INTO USUARIO(nome, email, senha) VALUES('Afranio', 'afranio@email.com', '$2a$10$1QrlU4FnY9CGAzmGvEGCgOK9lHFlmqfGDz8WlKqZVCMMcyai1dAhu');
+INSERT INTO USUARIO(nome, email, senha) VALUES('Estopa', 'estopa@email.com', '$2a$10$1QrlU4FnY9CGAzmGvEGCgOK9lHFlmqfGDz8WlKqZVCMMcyai1dAhu ');
 
 
 INSERT INTO TOPICO(titulo, mensagem, data_criacao, status, autor_id, curso_id) VALUES('Dúvida', 'Erro ao criar projeto', '2021-01-05 18:00:00', 'NAO_RESPONDIDO', 1, 1);
